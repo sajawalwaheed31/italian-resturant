@@ -13,12 +13,8 @@ $secondary_color: #ffffff !default;
 	max-width: 1920px;
 	margin: 0 auto;
 	.inner-container {
-		width: 1350px;
-<<<<<<< HEAD
 		margin: 0 auto;
-=======
-		margin : 0 auto;
->>>>>>> f92157ec700b932f3028a16d4872ecee73bc73ee
+		max-width: 1350px;
 	}
 }
 h1 {
