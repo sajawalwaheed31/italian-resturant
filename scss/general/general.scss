@@ -6,17 +6,23 @@ $secondary_color: #ffffff !default;
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
+	font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
 }
 .main-container {
 	max-width: 1920px;
 	margin: 0 auto;
 	.inner-container {
 		width: 1350px;
+<<<<<<< HEAD
 		margin: 0 auto;
+=======
+		margin : 0 auto;
+>>>>>>> f92157ec700b932f3028a16d4872ecee73bc73ee
 	}
 }
 h1 {
-    line-height: 19px;
+    font-size: 19px;
 }
 h2 {
     font-size: 14px;
@@ -38,6 +44,7 @@ input, textarea {
 	border: 1px solid $primary_color;
 	outline: none;
 	padding: 10px;
+	border: 4px solid $primary_color;
 }
 button {
 	background-color: $secondary_color;
@@ -49,6 +56,7 @@ button {
     font-size: 16px;
 	text-align: center;
 	line-height: 53px;
+	border: 4px solid $primary_color;
 	&:hover {
 		background-color: $primary_color;
 		color: $secondary_color;
