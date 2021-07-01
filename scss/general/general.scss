@@ -3,14 +3,16 @@ $secondary_color: #ffffff !default;
 
 
 *,body {
-	paddong: 0px;
+	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
 }
 .main-container {
 	max-width: 1920px;
+	margin: 0 auto;
 	.inner-container {
 		width: 1350px;
+		margin: 0 auto;
 	}
 }
 h1 {
