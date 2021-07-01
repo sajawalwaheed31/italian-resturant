@@ -18,7 +18,7 @@ $secondary_color: #ffffff !default;
 	}
 }
 h1 {
-    font-size: 19px;
+    font-size: 26px;
 }
 h2 {
     font-size: 14px;
@@ -63,7 +63,10 @@ button {
 		color: $secondary_color;
 	}
 }
-
+label {
+	display: block;
+	margin-bottom: 10px;
+}
 
 .border {
 	border-bottom: 1px solid #0a0a0a;
