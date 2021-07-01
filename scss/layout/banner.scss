@@ -1,7 +1,39 @@
 .main-container {
     .banner {
+        background-image: url(/images/banner-1.png);
+        height: 400px;
+        background-size: cover;
+        position: relative;
+        margin-bottom: 20px;
         .inner-container{
+            .banner-box{
+                width: 340px;
+                margin: 0 auto;
+                color:$secondary-color;
+                position: absolute;
+                top: 120px;
+                left: 750px;
+                h1 {
+                    font-size: 90px;
+                    font-family: 'Yellowtail', cursive;
+                }
+                p{
+                    font-size: 20px;
+                    font-family: 'Fira Sans', sans-serif;
+                }
+            }
+            .banner-btn{
+                position: absolute;
+                top: 375px;
+                left: 405px;
+                button{
+                    margin-right: 10px;
+                    font-weight: 600;
+                }
+            }
+
             
+
         }
     }
 }
