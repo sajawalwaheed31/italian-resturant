@@ -1,0 +1,96 @@
+.main-container {
+	.inner-container {
+		.contact-banner {
+			padding: 20px;
+			background-image: url('../images/bannar-image.png');
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 548px;
+			.box {
+				text-align: center; 
+				.text-background {
+					h1 {
+						font-size: 26px;
+						margin-bottom: 40px;
+					}
+					h2 {
+						font-size: 20px;
+					}
+					margin: 0 auto;
+					width: 400px;
+  					height: 250px;
+    				background: rgba(255,255,255,0.9);
+    				padding: 70px 20px;
+    				margin-bottom: 30px;
+				}
+				.input-div {
+					position: relative;
+					margin-bottom: 30px;
+					input {
+						padding: 0px 50px;
+						width: 850px;
+						border-radius: 50px;
+					}
+					i {
+					top: 21px;
+   					position: absolute;
+    				font-size: 26px;
+				    left: 20%;
+				    color: $primary_color;	
+					}
+				}
+			}
+		}
+		.cs-form {
+    		padding-top: 20px;
+    		border-bottom: 1px solid #e8e8e8;
+    		.form-grid {
+        			display: grid;
+        			grid-template-columns: 290px 915px;
+        			grid-gap: 148px;
+        			align-items: baseline;
+        			.cs-booking {
+            			h4 {
+            			    margin-bottom: 20px;
+            			    color: #888888;
+            			    font-weight: 200;
+            			}
+            			p {
+            			    line-height: 26px;
+            			    margin-bottom: 25px;
+            			}
+            			a {
+            			    color: $primary_color;;
+            			}
+        			}
+        			.cs-form-section {
+            			box-shadow: 0px 0px 3px #e5e5ea;
+            			border: 2px solid #FCFCFF;
+            			border-radius: 2px;
+            			padding: 45px 35px;
+            			margin-bottom: 105px;
+            			.form {
+                			display: grid;
+                			grid-template-columns: 1fr 1fr;
+                			grid-gap: 40px;
+                			.cs-message-box {
+                    			grid-column: 2 !important;
+                    			grid-row: 1 / 4 !important;
+                    			textarea {
+                    				height: 338px;
+                    			}
+                			}
+                			.btn {
+                    			grid-column: 1 / 3;
+                    			text-align: center;
+                			}
+                			button {
+                   			 	width: 322px;
+                    			font-weight: bold;
+                			}
+            		}
+        		}
+    		}
+		}
+	}
+}
