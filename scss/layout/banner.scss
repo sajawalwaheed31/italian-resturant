@@ -11,8 +11,9 @@
                 margin: 0 auto;
                 color:$secondary-color;
                 position: absolute;
-                top: 120px;
-                left: 750px;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
                 h1 {
                     font-size: 90px;
                     font-family: 'Yellowtail', cursive;
@@ -27,8 +28,9 @@
                 grid-template-columns: 1fr 1fr 1fr;
                 grid-gap: 10px;
                 position: absolute;
-                top: 375px;
-                left: 620px;
+                bottom: 0;
+                left: 50%;
+                transform: translate(-50%, 50%);
                 button{
                     margin-right: 10px;
                     font-weight: 600;
