@@ -23,9 +23,12 @@
                 }
             }
             .banner-btn{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-gap: 10px;
                 position: absolute;
                 top: 375px;
-                left: 405px;
+                left: 620px;
                 button{
                     margin-right: 10px;
                     font-weight: 600;
