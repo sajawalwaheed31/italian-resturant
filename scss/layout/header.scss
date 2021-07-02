@@ -1,6 +1,15 @@
 header {
     position: sticky;
     box-shadow: 0 0 2px 1px rgb(0 0 0 / 15%);
+    @media (min-width: 320px) and (max-width: 767px) {
+
+    }
+    @media (min-width: 768px) and (max-width: 1023px) {
+
+    }
+    @media (min-width: 1024px) and (max-width: 1352px) {
+
+    }
     .inner-container {
         section {
             // height: 165px;
@@ -11,7 +20,7 @@ header {
                 grid-template-rows: 1fr;
                 grid-gap: 100px;
                 align-items: center;
-                .header-left-content{
+                .header-left-content {
                     display: grid;
                     grid-template-columns: auto auto;
                     grid-gap: 6px;
@@ -60,8 +69,15 @@ header {
                    position: relative;
                     li{
                         display: inline-block;
-                        margin-right: 57px;
+                        margin-right: 24px;
                         position:relative;
+                        padding-left: 34px;
+                        &:first-child {
+                            padding: 0;
+                            &::before {
+                                display: none;
+                            }
+                        }
                         &:last-child{
                             margin-right: 0;
                         }
@@ -74,8 +90,8 @@ header {
                             border-radius: 50%;
                             position: absolute;
                             top: 50%;
-                            transform: translate(-50% , -50%);
-                            left: 50%;
+                            transform: translate(0 , -50%);
+                            left: 0;
                         }
                        a{
                            color: #000000;
