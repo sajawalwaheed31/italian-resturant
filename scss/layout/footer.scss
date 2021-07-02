@@ -38,16 +38,16 @@ footer {
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
         grid-gap :20px;
 
-        .footer-menu-one {
-            .logo-image {
-                margin-bottom: 55px;
-            }
-        }
         hr{
             width: 70px;
             border-top: 1px solid #ffffff;
             margin: 0 auto;
             margin-bottom: 31px;
+        }
+        div {
+            .logo-image {
+                margin-bottom: 55px;
+            }
         }
         ul {
             li{
