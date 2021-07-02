@@ -28,7 +28,7 @@
                     height: 52px;
                     display: grid;
                     place-items: center;
-                      
+                    cursor: pointer;
                 }
                 input {
                     width: 266px;
@@ -77,14 +77,19 @@
                         position: absolute;
                         top: 15px;
                         right: 0;
+                        cursor: pointer;
                     }
                 }
                 
-                button {
-                    width: 98px;
-                    height: 52px;
-                    background-color: $primary_color;
-                    color: white;
+                a {
+                    text-decoration: none;
+                    display: block;
+                    button {
+                        width: 98px;
+                        height: 52px;
+                        background-color: $primary_color;
+                        color: white;
+                    }
                 }
             }
             
@@ -117,7 +122,7 @@
                 img {
                     margin: 0 auto;
                     display: block;
-                    width: 540px;
+                    width: 580px;
                     height: 303.19px;
                     margin-bottom: 12px;
                 }
