@@ -4,11 +4,29 @@ footer {
     height: 350px;
     padding: 60px 0;
 
+    @media (min-width: 320px) and (max-width: 767px) {
+        height: auto;
+        padding: 20px ;
+
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        padding:20px 40px 0;
+        height: auto;
+    }
+
     h1 {
         text-align: center;
         color: #ffffff;
         margin-bottom: 60px;
         font-size: 40px;
+
+        @media (min-width: 320px) and (max-width: 767px) {
+            text-align: left;
+            margin-bottom: 45px;
+            font-size: 40px;
+        }
+        
     }
     h2 {
         margin-bottom: 30px;
@@ -17,6 +35,13 @@ footer {
         font-weight: normal;
         border-bottom: 1px solid #ffff;
         padding-bottom: 12px;
+
+        @media (min-width: 320px) and (max-width: 767px) {
+            padding-bottom: 4px;
+            margin-bottom: 15px;
+            width: 100px;
+        }
+
     }
     a {
         color: #ffffff;
@@ -39,10 +64,23 @@ footer {
         grid-template-columns: 200px 150px 150px 150px 150px;
         grid-gap :100px;
 
-        
+        @media (min-width: 320px) and (max-width: 767px) {
+            grid-template-columns: 1fr;
+            grid-gap :40px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+            grid-template-columns: 1fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr;
+            grid-gap :40px;
+        }
         div {
             .logo-image {
                 margin-bottom: 55px;
+                
+                @media (min-width: 320px) and (max-width: 767px) {
+                    margin-bottom: 25px;
+                }
             }
         }
         ul {
