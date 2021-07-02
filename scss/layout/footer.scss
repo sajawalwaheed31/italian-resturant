@@ -7,15 +7,16 @@ footer {
     h1 {
         text-align: center;
         color: #ffffff;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
         font-size: 40px;
     }
-    h2{
-        margin-bottom: 20px;
+    h2 {
+        margin-bottom: 30px;
         color: #ffffff;
-        font-size: 18px;
+        font-size: 20px;
         font-weight: normal;
-        text-align: center;
+        border-bottom: 1px solid #ffff;
+        padding-bottom: 12px;
     }
     a {
         color: #ffffff;
@@ -25,7 +26,7 @@ footer {
         margin-right: 10px;
         font-size: 15px;
     }
-    li{
+    li {
         margin-bottom: 5px;
         padding-left: 8px;
         &:last-child{
@@ -35,24 +36,18 @@ footer {
    
     .footer-menu {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        grid-gap :20px;
+        grid-template-columns: 200px 150px 150px 150px 150px;
+        grid-gap :100px;
 
-        hr{
-            width: 70px;
-            border-top: 1px solid #ffffff;
-            margin: 0 auto;
-            margin-bottom: 31px;
-        }
+        
         div {
             .logo-image {
                 margin-bottom: 55px;
             }
         }
         ul {
-            li{
+            li {
                 margin-bottom: 5px;
-                text-align: center;
             }
             &:last-child{
                 margin-bottom: 0px;
