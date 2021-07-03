@@ -8,6 +8,11 @@
             margin: 0 auto;
             text-align: center;
             padding-bottom: 22px;
+            @media (min-width: 320px) and (max-width: 767px) {
+                width: inherit;
+                position: relative;
+            }
+            
             
             h3 {
                 text-align: center;
@@ -22,22 +27,41 @@
                 height: 52px;
                 display: grid;
                 grid-template-columns: 52px 266px 83px 250px 98px;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    display: table-footer-group;
+                }
                 i {
                     color: white;
                     background-color: $primary_color;
-                    height: 52px;
+                    height: 53px;
                     display: grid;
                     place-items: center;
                     cursor: pointer;
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        width: 52px;
+                        display: inline-block;
+                        height: 53px;
+                        line-height: 52px;
+                        font-size: 14px;
+                    }
+                    @media (min-width: 768px) and (max-width: 1023px) {
+                        height: 53px;
+                    }
+                    @media (min-width: 1024px) and (max-width: 1352px) {
+                        height: 53px;
+                    }
                 }
-                input {
-                    width: 266px;
-                    height: 52px;
-                    border-color: $primary_color;
-                    box-shadow: inset 0 0 0 2px $primary_color;
-                    color: #707070;
-                    padding: 0 24px;
+                p {
+                    display: inline-block;
                     
+                    input {
+                        width: 266px;
+                        height: 53px;
+                        border-color: $primary_color;
+                        box-shadow: inset 0 0 0 2px $primary_color;
+                        color: #707070;
+                        padding: 0 24px;   
+                    }
                 }
                 ::placeholder {
                     color: #c2c2c2;
@@ -48,7 +72,12 @@
                     // text-align: center;
                     display: grid;
                     place-items: center;
-                    
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        display: inline-block;
+                        height: 52px;
+                        line-height: 52px;
+                        
+                    }
                 }
                 .div-select {
                     position: relative;
@@ -66,6 +95,9 @@
                                 color: #c2c2c2;
                             }
                         }
+                        @media (min-width: 320px) and (max-width: 767px) {
+                            display: inherit;
+                        }
                     }
                     i {
                         font-size: 22px;
@@ -78,17 +110,41 @@
                         top: 15px;
                         right: 0;
                         cursor: pointer;
+                        @media (min-width: 320px) and (max-width: 767px) {
+                            top: 3px;
+                            right: 70px;
+                        }
                     }
                 }
                 
                 a {
                     text-decoration: none;
                     display: block;
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        width: 52px;
+                    }
+                    @media (min-width: 768px) and (max-width: 1023px) {
+                        width: 98px;
+                    }
+                    @media (min-width: 1024px) and (max-width: 1352px) {
+                        width: 98px;
+                    }
                     button {
                         width: 98px;
                         height: 52px;
                         background-color: $primary_color;
                         color: white;
+                        @media (min-width: 320px) and (max-width: 767px) {
+                            position: absolute;
+                            right: 2px;
+                            top: 157px;
+                        }
+                        @media (min-width: 768px) and (max-width: 1023px) {
+                            width: 98px;
+                        }
+                        @media (min-width: 1024px) and (max-width: 1352px) {
+                            width: 98px;
+                        }
                     }
                 }
             }
@@ -102,9 +158,24 @@
             text-align: center;
             div {
                 padding: 0 20px;
+                &:first-child {
+                    border-right: 1px solid black;
+                    
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        border-right: none;
+                    }
+                    @media (min-width: 768px) and (max-width: 1023px) {
+                        border-right: none;
+                    }
+                    
+                }
+                
                 h2 {
                     margin-bottom: 12px;
                     font-size: 1.75em;
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        width: 275px;
+                    } 
                 }
 
                 hr {
@@ -112,12 +183,19 @@
                     border-top: 2px solid #0a0a0a;
                     margin: 0 auto;
                     margin-bottom: 12px;
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        width: 100px;
+                        
+                    } 
                 }
                 p {
                     width: 443px;
                     margin: 0 auto;
                     margin-bottom: 12px;
                     line-height: 26px;
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        width: 272px;
+                    } 
                 }
                 img {
                     margin: 0 auto;
@@ -125,6 +203,17 @@
                     width: 580px;
                     height: 303.19px;
                     margin-bottom: 40px;
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        width: 100%
+                    } 
+                    @media (min-width: 768px) and (max-width: 1023px) {
+                        width: 650px;
+                        height: 350px;
+                    }
+                    @media (min-width: 1024px) and (max-width: 1352px) {
+                        width: 440px;
+                        height: 320px;
+                    }
                 }
                 button {
                     width: 149.53px;
@@ -135,8 +224,29 @@
                         background-color: $secondary_color;
                         color: $primary_color;
                     }
+                    @media (min-width: 320px) and (max-width: 767px) {
+                        margin-bottom: 20px;
+                    } 
+                    @media (min-width: 768px) and (max-width: 1023px) {
+                        margin-bottom: 20px;
+
+                    }
                 }
                 
+                
+            }
+            @media (min-width: 320px) and (max-width: 767px) {
+                display: grid;
+                grid-template-columns: 1fr;
+            } 
+            @media (min-width: 768px) and (max-width: 1023px) {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-gap: 30px;
+            }
+            @media (min-width: 1024px) and (max-width: 1352px) {
+                display: grid;
+                grid-template-columns: 500px 500px;
             }
         }
     }
