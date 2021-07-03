@@ -7,6 +7,15 @@
 			.box {
 				text-align: center; 
 				.text-background {
+					margin: 0 auto;
+					max-width: 400px;
+  					height: 250px;
+    				background: rgba(255,255,255,0.9);
+    				padding: 70px 20px;
+    				margin-bottom: 30px;
+					@media (min-width: 320px) and (max-width: 767px) {
+						padding: 35px 20px;
+    				}
 					h1 {
 						font-size: 26px;
 						margin-bottom: 40px;
@@ -14,27 +23,41 @@
 					h2 {
 						font-size: 20px;
 					}
-					margin: 0 auto;
-					width: 400px;
-  					height: 250px;
-    				background: rgba(255,255,255,0.9);
-    				padding: 70px 20px;
-    				margin-bottom: 30px;
 				}
 				.input-div {
 					position: relative;
 					margin-bottom: 30px;
 					input {
+						@media (min-width: 320px) and (max-width: 767px) {
+							width: 285px;
+    					}
+    					@media (min-width: 768px) and (max-width: 1023px) {
+    						width: 725px;
+    						padding: 0px 70px;
+    					}
+    					@media (min-width: 1024px) and (max-width: 1352px) {
+    						width: 725px;
+    						padding: 0px 70px;
+    					}
 						padding: 0px 50px;
 						width: 850px;
 						border-radius: 50px;
 					}
 					i {
-					top: 21px;
-   					position: absolute;
-    				font-size: 26px;
-				    left: 20%;
-				    color: $primary_color;	
+						@media (min-width: 320px) and (max-width: 767px) {
+							display: none;
+    					}
+    					@media (min-width: 768px) and (max-width: 1023px) {
+    						left: 30px;
+    					}
+    					@media (min-width: 1024px) and (max-width: 1352px) {
+    						left: 16%;
+    					}
+						top: 21px;
+   						position: absolute;
+    					font-size: 26px;
+				    	left: 20%;
+				    	color: $primary_color;	
 					}
 				}
 			}
@@ -43,6 +66,25 @@
     		padding-top: 20px;
     		border-bottom: 1px solid #e8e8e8;
     		.form-grid {
+    				@media (min-width: 320px) and (max-width: 767px) {
+    					width: 285px;
+						grid-template-columns: 1fr;
+						grid-template-rows: 200px 1fr;
+						grid-gap: 20px;
+						margin: 0 auto;	
+    				}
+    				@media (min-width: 768px) and (max-width: 1023px) {
+    					width: 620px;
+    					grid-template-columns: 1fr;
+						grid-template-rows: 200px 1fr;
+						grid-gap: 20px;
+						margin: 0 auto
+    				}
+    				@media (min-width: 1024px) and (max-width: 1352px) {
+    					display: block;
+    					width: 820px;
+    					margin: 0 auto;
+    				}
         			display: grid;
         			grid-template-columns: 290px 915px;
         			grid-gap: 148px;
@@ -62,19 +104,49 @@
             			}
         			}
         			.cs-form-section {
+        				@media (min-width: 320px) and (max-width: 767px) {
+							width: 285px;
+							padding: 0px;	
+    					}
             			box-shadow: 0px 0px 3px #e5e5ea;
             			border: 2px solid #FCFCFF;
             			border-radius: 2px;
             			padding: 45px 35px;
             			margin-bottom: 105px;
             			.form {
+            				@media (min-width: 320px) and (max-width: 767px) {
+								display: block;	
+    						}
+    						@media (min-width: 768px) and (max-width: 1023px) {
+    							display: block;
+    						}
                 			display: grid;
                 			grid-template-columns: 1fr 1fr;
                 			grid-gap: 40px;
+                			input {
+									@media (min-width: 320px) and (max-width: 767px) {
+										width: 285px;	
+    								}
+    								@media (min-width: 768px) and (max-width: 1023px) {
+										width: 545px;    								
+									}
+									@media (min-width: 1024px) and (max-width: 1352px) {
+    									width: 360px;
+    								}
+                    			}
                 			.cs-message-box {
                     			grid-column: 2 !important;
                     			grid-row: 1 / 4 !important;
                     			textarea {
+                    				@media (min-width: 320px) and (max-width: 767px) {
+										max-width: 285px;	
+    								}
+    								@media (min-width: 768px) and (max-width: 1023px) {
+    									width: 545px;
+    								}
+    								@media (min-width: 1024px) and (max-width: 1352px) {
+    									width: 360px;
+    								}
                     				height: 338px;
                     			}
                 			}
@@ -83,6 +155,9 @@
                     			text-align: center;
                 			}
                 			button {
+                				@media (min-width: 320px) and (max-width: 767px) {
+									width: 285px;	
+    							}
                    			 	width: 322px;
                     			font-weight: bold;
                 			}
