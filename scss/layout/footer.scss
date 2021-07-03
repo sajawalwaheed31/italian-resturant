@@ -15,6 +15,11 @@ footer {
         height: auto;
     }
 
+    @media (min-width: 1024px) and (max-width: 1352px) {
+       height: auto;
+       padding: 20px 60px ;
+    }
+
     h1 {
         text-align: center;
         color: #ffffff;
@@ -73,6 +78,12 @@ footer {
             grid-template-columns: 1fr 1fr 1fr ;
             grid-template-rows: 1fr 1fr;
             grid-gap :40px;
+        }
+
+        @media (min-width: 1024px) and (max-width: 1352px) {
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            
+            grid-gap :40px 50px;
         }
         div {
             .logo-image {
