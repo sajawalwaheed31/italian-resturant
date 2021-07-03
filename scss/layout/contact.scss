@@ -107,6 +107,8 @@
         				@media (min-width: 320px) and (max-width: 767px) {
 							width: 285px;
 							padding: 0px;	
+							box-shadow: none;
+            				border: none;
     					}
             			box-shadow: 0px 0px 3px #e5e5ea;
             			border: 2px solid #FCFCFF;
@@ -123,9 +125,12 @@
                 			display: grid;
                 			grid-template-columns: 1fr 1fr;
                 			grid-gap: 40px;
-                			input {
+                			p {
+                				margin-bottom: 10px;
+                     			input {
 									@media (min-width: 320px) and (max-width: 767px) {
-										width: 285px;	
+										width: 285px;
+										height: 40px;	
     								}
     								@media (min-width: 768px) and (max-width: 1023px) {
 										width: 545px;    								
@@ -134,6 +139,7 @@
     									width: 360px;
     								}
                     			}
+                			}
                 			.cs-message-box {
                     			grid-column: 2 !important;
                     			grid-row: 1 / 4 !important;
