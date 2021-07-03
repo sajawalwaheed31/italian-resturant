@@ -9,44 +9,45 @@
 </head>
 <body>
 	<div class="main-container">
-         <header>
-                <div class="inner-container">
-                    <section>
-                        <div class="header-content">
-                            <div class="header-left-content">
-                                <a href="#">
-                                    <button>
-                                        <i class="fa fa-map-marker" style="font-size:16px"></i>
-                                        <span>Find a restaurant</span>
-                                    </button>
-                                </a>
-                                <a href="#">
-                                    <button>
-                                        <span> Book now</span>
-                                    </button>
-                                </a>
-                            </div>
-                            <div class="header-middle-content">
-                                <a href=" #">
-                                   <img src="" alt="" srcset="">
-                                </a>
-                            </div>
-                            <!-- <div class="header-right-content"></div> -->
+        <header>
+            <div class="inner-container">
+                <section>
+                    <div class="header-content">
+                        <div class="header-left-content">
+                            <a href="#" >
+                                <button class="first-small-width">
+                                    <i class="fa fa-map-marker" style="font-size:16px"></i>
+                                    <span class="first-btn">Find a restaurant</span>
+                                </button>
+                            </a>
+                            <a href="#">
+                                <button class="second-small-width">
+                                    <span> Book now</span>
+                                </button>
+                            </a>
                         </div>
-                        <div class="divider"> </div>
-                        <div class="menu">
-                            <ul>
-                                <li><a href="index.html">Home </a></li>
-                                <li><a href="#">Menus </a></li>
-                                <li><a href="about-us.html">About Us </a></li>
-                                <li><a href="contact.html">Contact Us </a></li>
-                                <li><a href="#">Our Menu & Pricing </a></li>
-                               
-                            </ul>
+                        <div class="header-middle-content">
+                            <a href=" #">
+                               <img src=" " alt="" srcset=" image not found">           
+                            </a>
                         </div>
-                    </section>
-                </div>
-            </header>
+                        <div class="header-right-content" >
+                            <i class="fa fa-bars" style="font-size:30px;color: #00756c; cursor: pointer;" id="open-menu"></i>     
+                        </div>
+                    </div>
+                    <div class="divider"> </div>
+                    <div class="menu">
+                        <ul id="myLinks">
+                            <li><a href="index.html">Home </a></li>
+                            <li><a href="#">Menus </a></li>
+                            <li><a href="about-us.html">About Us </a></li>
+                            <li><a href="contact.html">Contact Us </a></li>
+                            <li><a href="#">Our Menu & Pricing </a></li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </header>
         <div class="contact-banner">
 		    <div class="inner-container">
 				<div class="box">
@@ -168,5 +169,15 @@
                 </div>    
             </footer>
 	</div>
+    <!-- JQUERY START   -->
+    <script src="js/jquery.js"></script>
+    <script>
+             $(document).ready(function(){
+             $('#open-menu').click(function(){
+             $('#myLinks').toggle(1000);
+             });
+              });
+    </script>
+    <!-- JQUERY END   -->
 </body>
 </html>
