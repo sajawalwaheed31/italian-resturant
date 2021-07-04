@@ -26,127 +26,20 @@
             .inputs-section {
                 height: 52px;
                 display: grid;
-                grid-template-columns: 52px 266px 83px 250px 98px;
-                @media (min-width: 320px) and (max-width: 767px) {
-                    display: table-footer-group;
-                }
-                i {
-                    color: white;
-                    background-color: $primary_color;
-                    height: 53px;
-                    display: grid;
-                    place-items: center;
-                    cursor: pointer;
-                    @media (min-width: 320px) and (max-width: 767px) {
-                        width: 52px;
-                        display: inline-block;
-                        height: 53px;
-                        line-height: 52px;
-                        font-size: 14px;
-                    }
-                    @media (min-width: 768px) and (max-width: 1023px) {
-                        height: 53px;
-                    }
-                    @media (min-width: 1024px) and (max-width: 1352px) {
-                        height: 53px;
-                    }
-                }
-                p {
-                    display: inline-block;
-                    
-                    input {
-                        width: 266px;
-                        height: 53px;
-                        border-color: $primary_color;
-                        box-shadow: inset 0 0 0 2px $primary_color;
-                        color: #707070;
-                        padding: 0 24px;   
-                    }
-                }
-                ::placeholder {
-                    color: #c2c2c2;
-                }
-                p {
-                    // display: inline-block;
-                    // height: 52px;
-                    // text-align: center;
-                    display: grid;
-                    place-items: center;
-                    @media (min-width: 320px) and (max-width: 767px) {
-                        display: inline-block;
-                        height: 52px;
-                        line-height: 52px;
-                        
-                    }
-                }
-                .div-select {
-                    position: relative;
-                    select {
-                        height: 52px;
-                        padding: 0 24px;
-                        box-shadow: inset 0 0 0 2px $primary_color;
-                        border-color: $primary_color;
-                        color: #c2c2c2;
-                        -webkit-appearance: none;
-                        cursor: pointer;
-                        optgroup {
-                            color: #707070;
-                            option {
-                                color: #c2c2c2;
-                            }
-                        }
-                        @media (min-width: 320px) and (max-width: 767px) {
-                            display: inherit;
-                        }
-                    }
+                grid-template-columns: 254px 68px 316px;
+                div {
                     i {
-                        font-size: 22px;
-                        width: 24px;
-                        height: 24px;
-                        border-radius: 50px;
-                        color: #00756c;
-                        background-color: white;
-                        position: absolute;
-                        top: 15px;
-                        right: 0;
-                        cursor: pointer;
-                        @media (min-width: 320px) and (max-width: 767px) {
-                            top: 3px;
-                            right: 70px;
+                        width: 52px;
+                        height: 52px;
+                        background-color: $primary_color;
+                    }
+                    p {
+                        input {
+                            width: 202px;
                         }
                     }
                 }
                 
-                a {
-                    text-decoration: none;
-                    display: block;
-                    @media (min-width: 320px) and (max-width: 767px) {
-                        width: 52px;
-                    }
-                    @media (min-width: 768px) and (max-width: 1023px) {
-                        width: 98px;
-                    }
-                    @media (min-width: 1024px) and (max-width: 1352px) {
-                        width: 98px;
-                    }
-                    button {
-                        width: 98px;
-                        height: 52px;
-                        background-color: $primary_color;
-                        color: white;
-                        @media (min-width: 320px) and (max-width: 767px) {
-                            position: absolute;
-                            right: 2px;
-                            top: 157px;
-                        }
-                        @media (min-width: 768px) and (max-width: 1023px) {
-                            width: 98px;
-                        }
-                        @media (min-width: 1024px) and (max-width: 1352px) {
-                            width: 98px;
-                        }
-                    }
-                }
             }
             
         }
