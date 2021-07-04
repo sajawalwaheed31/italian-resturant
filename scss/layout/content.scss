@@ -4,13 +4,14 @@
         margin-bottom: 40px;
         .book-a-table {
             
-            width: 748.97px;
+            width: 640px;
             margin: 0 auto;
             text-align: center;
             padding-bottom: 22px;
             @media (min-width: 320px) and (max-width: 767px) {
                 width: inherit;
                 position: relative;
+                padding-bottom: 130px;
             }
             
             
@@ -26,16 +27,84 @@
             .inputs-section {
                 height: 52px;
                 display: grid;
-                grid-template-columns: 254px 68px 316px;
-                div {
+                grid-template-columns: 254px 68px 320px;
+                @media (min-width: 320px) and (max-width: 767px) {
+                    display: block;
+                    margin: 0 auto;
+                    width: 254px;
+                }
+                @media (min-width: 768px) and (max-width: 1024px) {
+                    display: grid;
+                }
+                .input-field {
+                    display: grid;
+                    grid-template-columns: 52px 202px;
+                    height: 52px;
                     i {
                         width: 52px;
                         height: 52px;
                         background-color: $primary_color;
+                        line-height: 52px;
+                        color: white;
                     }
                     p {
                         input {
-                            width: 202px;
+                            width: 100%;
+                            height: 52px;
+                        }
+                    }
+                }
+                .text-field {
+                    p {
+                        width: 100%;
+                        height: 52px;
+                        line-height: 52px;
+                    }
+                }
+                .div-select {
+                    display: grid;
+                    grid-template-columns: 204px 114px;
+                    .select {
+                        position: relative;
+                        select {
+                            height: 52px;
+                            width: 100%;
+                            -webkit-appearance: none;
+                            padding: 0 11px;
+                            border: 1px solid $primary_color;
+                            outline: none;
+                        }
+                        i {
+                            position: absolute;
+                            color: $primary_color;
+                            right: 12px;
+                            top: 21px;
+                        }
+                    }
+                    .btn {
+                        width: 114px;
+                        height: 52px;
+                        @media (min-width: 320px) and (max-width: 767px) {
+                            width: 52px;
+                        }
+                        a {
+                            text-decoration: none;
+                            height: 52px;
+                            width: 100%;
+                            line-height: 52px;
+                            color: white;
+                            cursor: pointer;
+                            display: block;
+                            background-color: $primary_color;
+                            border: 1px solid $primary_color;
+                            @media (min-width: 320px) and (max-width: 767px) {
+                                width: 100%;
+                            }
+                            &:hover {
+                                color: $primary_color;
+                                background-color: white;
+                                transition: 2s;
+                            }
                         }
                     }
                 }
@@ -66,9 +135,6 @@
                 h2 {
                     margin-bottom: 12px;
                     font-size: 1.75em;
-                    @media (min-width: 320px) and (max-width: 767px) {
-                        width: 275px;
-                    } 
                 }
 
                 hr {
