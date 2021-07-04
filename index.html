@@ -10,6 +10,16 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&family=Yellowtail&display=swap" rel="stylesheet">
+         <!-- JQUERY START   -->
+         <script src="js/jquery.js"></script>
+         <script>
+                  $(document).ready(function(){
+                  $('#open-menu').click(function(){
+                     $('#link').toggle(1000);
+                  });
+                   });
+         </script>
+          <!-- JQUERY END   -->
     </head>
     <body>
         <div class="main-container">
@@ -42,8 +52,8 @@
                             </div>
                         </div>
                         <div class="divider"> </div>
-                        <div class="menu">
-                            <ul id="myLinks">
+                        <div class="menu" id="link">
+                            <ul>
                                 <li><a href="index.html">Home </a></li>
                                 <li><a href="#">Menus </a></li>
                                 <li><a href="about-us.html">About Us </a></li>
@@ -191,15 +201,6 @@
             <!-- Husnain work end -->
             <!-- Footer end -->
         </div> 
-        <!-- JQUERY START   -->
-        <script src="js/jquery.js"></script>
-        <script>
-                 $(document).ready(function(){
-                 $('#open-menu').click(function(){
-                    $('#myLinks').toggle(1000);
-                 });
-                  });
-        </script>
-         <!-- JQUERY END   -->
+       
     </body>
 </html>
